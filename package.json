@@ -4,9 +4,10 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon index.js"
+		"dev": "cross-env NODE_ENV=development nodemon index.js"
 	},
 	"dependencies": {
+		"cross-env": "^5.2.0",
 		"discord.js": "^11.5.1",
 		"dotenv": "^8.0.0"
 	},

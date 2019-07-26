@@ -1,8 +1,7 @@
-const dotenv = require('dotenv');
-dotenv.config();
-
 const Discord = require('discord.js');
 
+require('./config/config');
+console.log(process.env.token);
 const client = new Discord.Client();
 const token = process.env.token;
 
@@ -13,7 +12,6 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-	console.log(msg);
 	if (msg.content === 'hello') {
 		msg.channel.send(`Hello ${msg.author}`);
 	}
