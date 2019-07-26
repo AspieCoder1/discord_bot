@@ -7,7 +7,6 @@ const token = process.env.token;
 
 client.on('ready', () => {
 	console.log('bot is now connected');
-
 	client.channels.find(x => x.name === 'test').send("Hello! I'm now connected");
 });
 
