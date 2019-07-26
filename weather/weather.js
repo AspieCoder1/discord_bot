@@ -11,7 +11,7 @@ const weather = async address => {
 			location,
 		};
 	} catch (err) {
-		console.log(err);
+		return err;
 	}
 };
 module.exports = weather;
